@@ -51,8 +51,8 @@ def menu():
 	clear()
 	banner()
 	print("\n--------------------------------------------------")
-	print("\n[1] Comment Bot")
-	print("[2] Add Token")
+	print("\n[1] Auto Comment")
+	print("[2] Auto Followers")
 	print("[0] Log Out")
 	pilih()
 
@@ -117,7 +117,7 @@ def komen():
 		yt = requests.post("https://graph.facebook.com/"+id+"/comments/?message="+ko+"&access_token="+bo)
 		bh = json.loads(yt.text)
 		if "id" in bh:
-			print("[x] Comment To %s Success To Send" %(k))
+			print("[✔] Comment To %s Success To Send" %(k))
 		if "error" in bh:
 			print("[x] Comment To %s Failed To Send" %(k))
 	print("[x] Finished")
