@@ -119,7 +119,7 @@ def komen():
 		if "id" in bh:
 			print("[✔] Comment To %s Success To Send" %(k))
 		if "error" in bh:
-			print("[x] Comment To %s Failed To Send" %(k))
+			print("[✖] Comment To %s Failed To Send" %(k))
 	print("[x] Finished")
 	input("[x] Back")
 	menu()
