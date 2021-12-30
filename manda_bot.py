@@ -41,10 +41,6 @@ def log():
 		zex.close()
 		print("[x] Login Succes")
 		menu()
-
-### BOT FOLLOW DAN KOMEN ###
-def bot():
-	try:
 		token = open('token.txt', 'r').read()
 	except (KeyError, IOError):
 		exit(" %s[!] token kadaluwarsa!"%(M))
