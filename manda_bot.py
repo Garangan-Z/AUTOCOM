@@ -58,7 +58,7 @@ def menu():
         print("║")
 	print("╠══◍➤®[2] Auto Followers")
         print("║")
-	print("╚══◍➤®[\[0] Log Out")
+	print("╚══◍➤®[0] Log Out")
         print(║")
 	pilih()
 
@@ -71,7 +71,7 @@ def pilih():
 	elif sc=="1":
 		komen()
 	elif sc=="2":
-		tok = input("\n╚══◍➤®[•] Token : ")
+		tok = input("╠══◍➤®[•] Token : ")
 		cs = open("bokep.json","a")
 		cs.write(","+tok)
 		cs.close()
@@ -109,7 +109,7 @@ def komen():
         print("║")
 	print("╠══◍➤®[•] Use a Comma(,)For Random Comments")
 	print("╠══◍➤®[•] Example : You Are Really Handsome,Eres Muy Guapo,Kamu Ganteng Banget")
-	ka = input("[x] Comment : ")
+	ka = input("╠══◍➤®[•] Comment : ")
 	w = open("kom.json","w")
 	w.write(ka)
 	w.close()
