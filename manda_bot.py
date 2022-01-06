@@ -40,7 +40,6 @@ def log():
 		zex = open("bokep.json","w")
 		zex.write(bos)
 		zex.close()
-                print("║")
 		print("╚══◍➤®[•] Login Succes")
 		menu()
 	except KeyError:
