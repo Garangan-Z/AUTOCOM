@@ -71,7 +71,6 @@ def pilih():
 		cs.write(","+tok)
 		cs.close()
 		print("╠══◍➤®[•] Token Added")
-                print("║")
 		input("╚══◍➤®[•] Back")
 		menu()
 	elif sc=="0":
@@ -91,16 +90,13 @@ def komen():
 		y = json.loads(cok.text)
 		nama = y["name"]
 	except Exception as e:
-                print("║")
 		print("╠══◍➤®[•] First Login")
 		log()
 	ki = input("\n╠══◍➤®[•] Enter Publik Post ID : ")
 	v = open("id.json","w")
 	v.write(ki)
 	v.close()
-        print("║")
 	print("╠══◍➤®[•] Input Comment Text...")
-        print("║")
 	print("╠══◍➤®[•] Use a Comma(,)For Random Comments")
 	print("╠══◍➤®[•] Example : You Are Really Handsome,Eres Muy Guapo,Kamu Ganteng Banget")
 	ka = input("╠══◍➤®[•] Comment : ")
@@ -123,9 +119,9 @@ def komen():
 		yt = requests.post("https://graph.facebook.com/"+id+"/comments/?message="+ko+"&access_token="+bo)
 		bh = json.loads(yt.text)
 		if "id" in bh:
-			print("[✔] Comment To %s Success To Send" %(k))
+			print("\033[1;92m[✔] Comment To %s Success To Send" %(k))
 		if "error" in bh:
-			print("[✖] Comment To %s Failed To Send" %(k))
+			print("\033[1;91m[✖] Comment To %s Failed To Send" %(k))
 	print("[x] Finished")
 	input("[x] Back")
 	menu()
