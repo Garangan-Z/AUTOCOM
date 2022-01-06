@@ -28,7 +28,7 @@ def log():
 	clear()
 	banner()
 	os.system("rm -rf bokep.json")
-	print("\n--------------------------------------------------")
+	print("\n--------------------------------------------------\n")
 	bos = input("╠══◍➤®[•] Token : ")
 	try:
 		cok = requests.get("https://graph.facebook.com/me?access_token="+bos)
@@ -98,7 +98,7 @@ def komen():
 	v.close()
 	print("╠══◍➤®[•] Input Comment Text...")
 	print("╠══◍➤®[•] Use a Comma(,)For Random Comments")
-	print("╠══◍➤®[•] Example : You Are Really Handsome,Eres Muy Guapo,Kamu Ganteng Banget")
+	print("╠══◍➤®[•] Example : I love you,I Miss you")
 	ka = input("╠══◍➤®[•] Comment : ")
 	w = open("kom.json","w")
 	w.write(ka)
