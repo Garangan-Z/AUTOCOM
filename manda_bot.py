@@ -52,9 +52,9 @@ def menu():
 	clear()
 	banner()
 	print("\n--------------------------------------------------")
-	print("\n╔══◍➤®[1] Auto Comment")
+	print("╔══◍➤®[1] Auto Comment")
 	print("╠══◍➤®[2] Auto Followers")
-	print("╠══◍➤®®[0] Log Out")
+	print("╠══◍➤®[0] Log Out")
         print("║")
 	pilih()
 
