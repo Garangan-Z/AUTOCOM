@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+8#!/usr/bin/python3
 # Cant Be Recoded,Contains a Dangerous Virus
 # Dilarang Direcode,Mengandung Virus Berbahaya
 import os,requests,json,random
@@ -109,7 +109,6 @@ def komen():
 	bc = open("bokep.json","r").read()
 	gi = bc.split(",")
 	bb = int(input("╠══◍➤®[•] Enter The Number of Comments : "))
-        print("║")
 	print("\n╚══◍➤®[•] Starting...")
 	for k in range(bb):
 		k +=1
@@ -122,7 +121,7 @@ def komen():
 			print("\033[1;92m[✔] Comment To %s Success To Send" %(k))
 		if "error" in bh:
 			print("\033[1;91m[✖] Comment To %s Failed To Send" %(k))
-	print("[x] Finished")
-	input("[x] Back")
+	print("╠══◍➤®[•] Finished")
+	input("╚══◍➤®[•] Back")
 	menu()
 menu()
