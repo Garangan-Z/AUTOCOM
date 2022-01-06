@@ -53,11 +53,8 @@ def menu():
 	banner()
 	print("\n--------------------------------------------------")
 	print("\n╔══◍➤®[1] Auto Comment")
-        print("║")
 	print("╠══◍➤®[2] Auto Followers")
-        print("║")
 	print("╚══◍➤®[0] Log Out")
-        print(║")
 	pilih()
 
 # PILIH MENU
