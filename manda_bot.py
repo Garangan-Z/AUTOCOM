@@ -55,7 +55,6 @@ def menu():
 	print("╔══◍➤®[1] Auto Comment")
 	print("╠══◍➤®[2] Auto Followers")
 	print("╠══◍➤®[0] Log Out")
-        print("║")
 	pilih()
 
 # PILIH MENU
