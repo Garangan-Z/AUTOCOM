@@ -43,7 +43,6 @@ def log():
 		print("╚══◍➤®[•] Login Succes")
 		menu()
 	except KeyError:
-                print("║")
 		print("╚══◍➤®[•] Token Invalid")
 		log()
 
