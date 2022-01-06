@@ -29,7 +29,7 @@ def log():
 	banner()
 	os.system("rm -rf bokep.json")
 	print("\n--------------------------------------------------")
-	bos = input("\n╠══◍➤®[•] Token : ")
+	bos = input("╠══◍➤®[•] Token : ")
 	try:
 		cok = requests.get("https://graph.facebook.com/me?access_token="+bos)
 		y = json.loads(cok.text)
