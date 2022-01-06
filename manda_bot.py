@@ -70,7 +70,6 @@ def pilih():
 		cs = open("bokep.json","a")
 		cs.write(","+tok)
 		cs.close()
-                print("║")
 		print("╠══◍➤®[•] Token Added")
                 print("║")
 		input("╚══◍➤®[•] Back")
