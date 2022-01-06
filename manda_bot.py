@@ -1,4 +1,4 @@
-8#!/usr/bin/python3
+#!/usr/bin/python3
 # Cant Be Recoded,Contains a Dangerous Virus
 # Dilarang Direcode,Mengandung Virus Berbahaya
 import os,requests,json,random
