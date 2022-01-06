@@ -29,7 +29,7 @@ def log():
 	banner()
 	os.system("rm -rf bokep.json")
 	print("\n--------------------------------------------------")
-	bos = input("\n[x] Token : ")
+	bos = input("\n╠══◍➤®[•] Token : ")
 	try:
 		cok = requests.get("https://graph.facebook.com/me?access_token="+bos)
 		y = json.loads(cok.text)
@@ -40,10 +40,12 @@ def log():
 		zex = open("bokep.json","w")
 		zex.write(bos)
 		zex.close()
-		print("[x] Login Succes")
+                print("║")
+		print("╚══◍➤®[•] Login Succes")
 		menu()
 	except KeyError:
-		print("[x] Token Invalid")
+                print("║")
+		print("╚══◍➤®[•] Token Invalid")
 		log()
 
 # MENU
@@ -52,30 +54,35 @@ def menu():
 	clear()
 	banner()
 	print("\n--------------------------------------------------")
-	print("\n[1] Auto Comment")
-	print("[2] Auto Followers")
-	print("[0] Log Out")
+	print("\n╔══◍➤®[1] Auto Comment")
+        print("║")
+	print("╠══◍➤®[2] Auto Followers")
+        print("║")
+	print("╚══◍➤®[\[0] Log Out")
+        print(║")
 	pilih()
 
 # PILIH MENU
 
 def pilih():
-	sc = input("\n[x] Choose : ")
+	sc = input("\n╠══◍➤®[•] Choose : ")
 	if sc=="":
 		pilih()
 	elif sc=="1":
 		komen()
 	elif sc=="2":
-		tok = input("\n[x] Token : ")
+		tok = input("\n╚══◍➤®[•] Token : ")
 		cs = open("bokep.json","a")
 		cs.write(","+tok)
 		cs.close()
-		print("[x] Token Added")
-		input("[x] Back")
+                print("║")
+		print("╠══◍➤®[•] Token Added")
+                print("║")
+		input("╚══◍➤®[•] Back")
 		menu()
 	elif sc=="0":
 		os.system("rm -rf tokek.json bokep.json")
-		print("[x] Thank You For Using My Tool.!!!")
+		print("╚══◍➤®[•] Thank You For Using My Tool.!!!")
 		exit()
 	else:
 		pilih()
@@ -90,15 +97,18 @@ def komen():
 		y = json.loads(cok.text)
 		nama = y["name"]
 	except Exception as e:
-		print("[x] First Login")
+                print("║")
+		print("╠══◍➤®[•] First Login")
 		log()
-	ki = input("\n[x] Enter Publik Post ID : ")
+	ki = input("\n╠══◍➤®[•] Enter Publik Post ID : ")
 	v = open("id.json","w")
 	v.write(ki)
 	v.close()
-	print("\n[x] Input Comment Text...")
-	print("[x] Use a Comma(,)For Random Comments")
-	print("[x] Example : You Are Really Handsome,Eres Muy Guapo,Kamu Ganteng Banget")
+        print("║")
+	print("╠══◍➤®[•] Input Comment Text...")
+        print("║")
+	print("╠══◍➤®[•] Use a Comma(,)For Random Comments")
+	print("╠══◍➤®[•] Example : You Are Really Handsome,Eres Muy Guapo,Kamu Ganteng Banget")
 	ka = input("[x] Comment : ")
 	w = open("kom.json","w")
 	w.write(ka)
@@ -108,8 +118,9 @@ def komen():
 	soyy = soy.split(",")
 	bc = open("bokep.json","r").read()
 	gi = bc.split(",")
-	bb = int(input("[x] Enter The Number of Comments : "))
-	print("\n[x] Starting...")
+	bb = int(input("╠══◍➤®[•] Enter The Number of Comments : "))
+        print("║")
+	print("\n╚══◍➤®[•] Starting...")
 	for k in range(bb):
 		k +=1
 		bo = random.choice(gi)
