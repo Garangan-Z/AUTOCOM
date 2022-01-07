@@ -51,7 +51,7 @@ def log():
 def menu():
 	clear()
 	banner()
-	print("\n--------------------------------------------------")
+	print("\n______________________________________________________\n")
 	print("╔══◍➤®[1] Auto Comment")
 	print("╠══◍➤®[2] Auto Followers")
 	print("╠══◍➤®[0] Log Out")
