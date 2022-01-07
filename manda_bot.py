@@ -18,9 +18,9 @@ def banner():
 █████╗░░██║░░░░░██║░░██╗░███████║██████╦╝██║░░██║░░░██║░░░
 \033[1;97m██╔══╝░░██║░░░░░██║░░╚██╗██╔══██║██╔══██╗██║░░██║░░░██║░░░
 ███████╗███████╗╚██████╔╝██║░░██║██████╦╝╚█████╔╝░░░██║░░░
-╚══════╝╚══════╝░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░\n\n\033[1;96mCreated By Raka Andrian Tara
-Only Works on Public Posts
-Not Working on Profile Photo and Cover Photo!""")
+╚══════╝╚══════╝░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░\n\n\033[1;96mCreated By \033[1;92mRaka Andrian Tara
+\033[1;96mCuma Work Di \033[1;92mPost Publik\033[1;96m
+Tidak Berjalan di Post Photo Profil dan Sampul!""")
 
 # LOGIN
 
@@ -29,7 +29,7 @@ def log():
 	banner()
 	os.system("rm -rf bokep.json")
 	print("\n--------------------------------------------------\n")
-	bos = input("╠══◍➤®[•] Token : ")
+	bos = input("╠══◍➤®[•] Token : \033[1;92m")
 	try:
 		cok = requests.get("https://graph.facebook.com/me?access_token="+bos)
 		y = json.loads(cok.text)
@@ -60,13 +60,13 @@ def menu():
 # PILIH MENU
 
 def pilih():
-	sc = input("\n╠══◍➤®[•] Choose : ")
+	sc = input("\n╠══◍➤®[•] Choose : \033[1;92m")
 	if sc=="":
 		pilih()
 	elif sc=="1":
 		komen()
 	elif sc=="2":
-		tok = input("╠══◍➤®[•] Token : ")
+		tok = input("╠══◍➤®[•] Token : \033[1;92m")
 		cs = open("bokep.json","a")
 		cs.write(","+tok)
 		cs.close()
@@ -92,14 +92,14 @@ def komen():
 	except Exception as e:
 		print("╠══◍➤®[•] First Login")
 		log()
-	ki = input("\n╠══◍➤®[•] Enter Publik Post ID : ")
+	ki = input("\n╠══◍➤®[•] Enter Publik Post ID : \033[1;92m")
 	v = open("id.json","w")
 	v.write(ki)
 	v.close()
 	print("╠══◍➤®[•] Input Comment Text...")
 	print("╠══◍➤®[•] Use a Comma(,)For Random Comments")
 	print("╠══◍➤®[•] Example : I love you,I Miss you")
-	ka = input("╠══◍➤®[•] Comment : ")
+	ka = input("╠══◍➤®[•] Comment : \033[1;92m")
 	w = open("kom.json","w")
 	w.write(ka)
 	w.close()
@@ -108,7 +108,7 @@ def komen():
 	soyy = soy.split(",")
 	bc = open("bokep.json","r").read()
 	gi = bc.split(",")
-	bb = int(input("╠══◍➤®[•] Enter The Number of Comments : "))
+	bb = int(input("╠══◍➤®[•] Enter The Number of Comments : \033[1;92m"))
 	print("\n╚══◍➤®[•] Starting...")
 	for k in range(bb):
 		k +=1
