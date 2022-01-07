@@ -21,7 +21,7 @@ def banner():
 ╚══════╝╚══════╝░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░\n\n\033[1;96mCreated By \033[1;92mRaka Tara Andrian 
 \033[1;96mCuma Work Di \033[1;92mPost Publik\033[1;96m
 Tidak Berjalan Di \033[1;92mPost Photo Profil dan Sampul !!!
-\033[1;96m Limit Minimal 50 Comment ...""")
+\033[1;96mLimit Minimal \033[1;92m50 \033[1;96mComment ...""")
 
 # LOGIN
 
