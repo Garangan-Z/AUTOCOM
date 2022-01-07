@@ -18,11 +18,11 @@ def banner():
 █████╗░░██║░░░░░██║░░██╗░███████║██████╦╝██║░░██║░░░██║░░░
 \033[1;97m██╔══╝░░██║░░░░░██║░░╚██╗██╔══██║██╔══██╗██║░░██║░░░██║░░░
 ███████╗███████╗╚██████╔╝██║░░██║██████╦╝╚█████╔╝░░░██║░░░
-╚══════╝╚══════╝░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░\n\n\033[1;96mCreated By \033[1;92mRaka Andrian Tara
-\033[1;96mInstagram \033[1;92mraka_andrian27 
-\033[1;96mCuma Work Di \033[1;92mPost Publik\033[1;96m
-Tidak Berjalan Di \033[1;92mPost Photo Profil dan Sampul !!!
-\033[1;96mLimit Minimal \033[1;92m50 \033[1;96mComment ...""")
+╚══════╝╚══════╝░╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░\n\n\033[1;96mCreated By \033[1;97mRaka Andrian Tara
+\033[1;96mInstagram \033[1;97mraka_andrian27 
+\033[1;96mCuma Work Di \033[1;97mPost Publik\033[1;96m
+Tidak Berjalan Di \033[1;97mPost Photo Profil dan Sampul !!!
+\033[1;96mLimit Minimal \033[1;97m50 \033[1;96mComment ...""")
 
 # LOGIN
 
@@ -30,7 +30,7 @@ def log():
 	clear()
 	banner()
 	os.system("rm -rf bokep.json")
-	print("\n______________________________________________________\n")
+	print("\033[1;97m\n______________________________________________________\n\033[1;96m")
 	bos = input("╠══◍➤®[•] Token : \033[1;92m")
 	try:
 		cok = requests.get("https://graph.facebook.com/me?access_token="+bos)
@@ -53,7 +53,7 @@ def log():
 def menu():
 	clear()
 	banner()
-	print("\n______________________________________________________\n")
+	print("\033[1;97m\n______________________________________________________\n\033[1;96m")
 	print("╔══◍➤®[1] Auto Comment")
 	print("╠══◍➤®[2] Auto Followers")
 	print("╠══◍➤®[0] Log Out")
