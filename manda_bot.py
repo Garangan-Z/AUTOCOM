@@ -97,8 +97,8 @@ def komen():
 	v.write(ki)
 	v.close()
 	print("╠══◍➤®[•] Input Comment Text...")
-	print("╠══◍➤®[•] Use a Comma(,)For Random Comments")
-	print("╠══◍➤®[•] Example : I love you,I Miss you")
+	print("╠══◍➤®[•] Use a Comma(\033[1;96m,\033[1;96m)For Random Comments")
+	print("╠══◍➤®[•] Example : \033[1;92mI love you,I Miss you")
 	ka = input("╠══◍➤®[•] Comment : \033[1;92m")
 	w = open("kom.json","w")
 	w.write(ka)
@@ -109,7 +109,7 @@ def komen():
 	bc = open("bokep.json","r").read()
 	gi = bc.split(",")
 	bb = int(input("╠══◍➤®[•] Enter The Number of Comments : \033[1;92m"))
-	print("\n╚══◍➤®[•] Starting...")
+	print("\n╚══◍➤®[•] Starting...\n")
 	for k in range(bb):
 		k +=1
 		bo = random.choice(gi)
