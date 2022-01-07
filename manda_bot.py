@@ -31,7 +31,7 @@ def log():
 	banner()
 	os.system("rm -rf bokep.json")
 	print("\033[1;97m\n______________________________________________________\n\033[1;96m")
-	bos = input("╠══◍➤®[•] Token : \033[1;92m")
+	bos = input("╠══◍➤®[•] Token : \033[1;97m")
 	try:
 		cok = requests.get("https://graph.facebook.com/me?access_token="+bos)
 		y = json.loads(cok.text)
@@ -62,13 +62,13 @@ def menu():
 # PILIH MENU
 
 def pilih():
-	sc = input("\n╠══◍➤®[•] Choose : \033[1;92m")
+	sc = input("\n╠══◍➤®[•] Choose : \033[1;97m")
 	if sc=="":
 		pilih()
 	elif sc=="1":
 		komen()
 	elif sc=="2":
-		tok = input("\033[1;96m╠══◍➤®[•] Token : \033[1;92m")
+		tok = input("\033[1;96m╠══◍➤®[•] Token : \033[1;97m")
 		cs = open("bokep.json","a")
 		cs.write(","+tok)
 		cs.close()
@@ -94,14 +94,14 @@ def komen():
 	except Exception as e:
 		print("╠══◍➤®[•] First Login")
 		log()
-	ki = input("\033[1;96m\n╠══◍➤®[•] Enter Publik Post ID : \033[1;92m")
+	ki = input("\033[1;96m\n╠══◍➤®[•] Enter Publik Post ID : \033[1;97m")
 	v = open("id.json","w")
 	v.write(ki)
 	v.close()
 	print("\033[1;96m╠══◍➤®[•] Input Comment Text...")
-	print("╠══◍➤®[•] Use a Comma(\033[1;92m,\033[1;96m)For Random Comments")
-	print("╠══◍➤®[•] Example : \033[1;92mI love you,I Miss you")
-	ka = input("\033[1;96m╠══◍➤®[•] Comment : \033[1;92m")
+	print("╠══◍➤®[•] Use a Comma(\033[1;97m,\033[1;96m)For Random Comments")
+	print("╠══◍➤®[•] Example : \033[1;97mI love you,I Miss you")
+	ka = input("\033[1;96m╠══◍➤®[•] Comment : \033[1;97m")
 	w = open("kom.json","w")
 	w.write(ka)
 	w.close()
@@ -110,7 +110,7 @@ def komen():
 	soyy = soy.split(",")
 	bc = open("bokep.json","r").read()
 	gi = bc.split(",")
-	bb = int(input("\033[1;96m╠══◍➤®[•] Enter The Number of Comments : \033[1;92m"))
+	bb = int(input("\033[1;96m╠══◍➤®[•] Enter The Number of Comments : \033[1;97m"))
 	print("\033[1;96m\n╚══◍➤®[•] Starting...\n")
 	for k in range(bb):
 		k +=1
@@ -120,9 +120,9 @@ def komen():
 		yt = requests.post("https://graph.facebook.com/"+id+"/comments/?message="+ko+"&access_token="+bo)
 		bh = json.loads(yt.text)
 		if "id" in bh:
-			print("\033[1;92m[✔] Comment To %s Success To Send" %(k))
+			print("\033[1;96m[✔] Comment To %s Success To Send" %(k))
 		if "error" in bh:
-			print("\033[1;91m[✖] Comment To %s Failed To Send" %(k))
+			print("\033[1;97m[✖] Comment To %s Failed To Send" %(k))
 	print("╠══◍➤®[•] Finished")
 	input("╚══◍➤®[•] Back")
 	menu()
