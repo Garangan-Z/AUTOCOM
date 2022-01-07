@@ -60,17 +60,17 @@ def menu():
 # PILIH MENU
 
 def pilih():
-	sc = input("\n╠══◍➤®[•] Choose : \033[1;92m\033[1;96m")
+	sc = input("\n╠══◍➤®[•] Choose : \033[1;92m")
 	if sc=="":
 		pilih()
 	elif sc=="1":
 		komen()
 	elif sc=="2":
-		tok = input("╠══◍➤®[•] Token : \033[1;92m\033[1;96m")
+		tok = input("\033[1;96m╠══◍➤®[•] Token : \033[1;92m")
 		cs = open("bokep.json","a")
 		cs.write(","+tok)
 		cs.close()
-		print("╠══◍➤®[•] Token Added")
+		print("\033[1;96m╠══◍➤®[•] Token Added")
 		input("╚══◍➤®[•] Back")
 		menu()
 	elif sc=="0":
@@ -92,14 +92,14 @@ def komen():
 	except Exception as e:
 		print("╠══◍➤®[•] First Login")
 		log()
-	ki = input("\n╠══◍➤®[•] Enter Publik Post ID : \033[1;92m\033[1;96m")
+	ki = input("\n╠══◍➤®[•] Enter Publik Post ID : \033[1;92m")
 	v = open("id.json","w")
 	v.write(ki)
 	v.close()
-	print("╠══◍➤®[•] Input Comment Text...")
+	print("\033[1;96m╠══◍➤®[•] Input Comment Text...")
 	print("╠══◍➤®[•] Use a Comma(\033[1;96m,\033[1;96m)For Random Comments")
 	print("╠══◍➤®[•] Example : \033[1;92mI love you,I Miss you")
-	ka = input("╠══◍➤®[•] Comment : \033[1;92m\033[1;96m")
+	ka = input("\033[1;96m╠══◍➤®[•] Comment : \033[1;92m")
 	w = open("kom.json","w")
 	w.write(ka)
 	w.close()
@@ -108,8 +108,8 @@ def komen():
 	soyy = soy.split(",")
 	bc = open("bokep.json","r").read()
 	gi = bc.split(",")
-	bb = int(input("╠══◍➤®[•] Enter The Number of Comments : \033[1;92m\033[1;96m"))
-	print("\n╚══◍➤®[•] Starting...\n")
+	bb = int(input("\033[1;96m╠══◍➤®[•] Enter The Number of Comments : \033[1;92m"))
+	print("\033[1;96m\n╚══◍➤®[•] Starting...\n")
 	for k in range(bb):
 		k +=1
 		bo = random.choice(gi)
